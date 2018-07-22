@@ -1,0 +1,31 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 50px;
+}
+
+.about__content {
+  margin-right: 20px;
+}
+
+.about__title {
+  margin: 0;
+  color: var(--dark-primary-color);
+  font: 500 32px 'Roboto', sans-serif;
+  text-align: left;
+}
+
+.about__text {
+  margin-top: 16px;
+  text-align: left;
+  color: var(--secondary-color);
+  font: 300 16px 'Roboto', sans-serif;
+  line-height: 2.5;
+}
+
+.about__img {
+  width: 50%;
+  margin-left: 20px;
+}
