@@ -15,7 +15,7 @@
 .header__text {
   margin: 40px 0 10px 80px;
   color: var(--light-secondary-color);
-  font: 700 45px 'Roboto';
+  font: 700 45px 'Roboto', sans-serif;
   width: 800px;
   text-align: left;
 }
