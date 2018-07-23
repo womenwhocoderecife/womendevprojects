@@ -1,0 +1,51 @@
+.proposal {
+  margin: o auto;
+  width: 100%;
+  padding: 50px;
+  background: #f4f5f7;
+}
+
+.proposal__title {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.proposal__content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto 0;
+}
+
+.proposal__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.proposal__card__middle {
+  margin: 0 20px;
+}
+
+.proposal__card__title {
+  margin: 0;
+  padding-top: 20px;
+  color: var(--dark-secondary-color);
+  font: 700 20px 'Roboto', sans-serif;
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+}
+
+.proposal__card__text {
+  margin-top: 16px;
+  text-align: left;
+  color: var(--secondary-color);
+  font: 300 16px 'Roboto', sans-serif;
+  line-height: 2;
+  padding: 0 10px;
+}
