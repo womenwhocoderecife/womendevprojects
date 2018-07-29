@@ -15,14 +15,14 @@
 ```sh
 $ git clone https://github.com/womenwhocoderecife/womendevprojects.git
 $ cd womendevprojects/
-$ yarn
+$ npm install
 ```
 
 
 **2 -** Start development mode:
 
 ```sh
-$ yarn start
+$ npm start
 ```
 
 Go to: [localhost:8080](http://localhost:8080)
@@ -30,8 +30,8 @@ Go to: [localhost:8080](http://localhost:8080)
 
 ## Automatic Tasks
 
-- `$ yarn start`: Watch the files to build and start a static server.
-- `$ yarn build`: Compile and minify public/bundle.js.
+- `$ npm start`: Watch the files to build and start a static server.
+- `$ npm build`: Compile and minify public/bundle.js.
 
 
 ## Contributing
