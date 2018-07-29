@@ -1,11 +1,20 @@
 .footer {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 50px;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+}
+
+@media( min-width: 760px) {
+  .footer {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
 }
 
 .footer__img {
@@ -15,11 +24,19 @@
 .footer__list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 30px 0;
   display: flex;
   flex-direction: column;
-  align-items: baseline;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
+}
+
+@media( min-width: 760px) {
+  .footer__list {
+    align-items: baseline;
+    justify-content: flex-end;
+    margin-bottom: 0;
+  }
 }
 
 .footer__list__title {
@@ -51,7 +68,7 @@
 }
 
 .footer__list__item__social-network {
-  margin: 5px;
+  margin: 5px 5px 0 0;
 }
 
 .footer__list__wwcode {
