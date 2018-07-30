@@ -3,13 +3,9 @@ import React, {Component} from 'react';
 import About from './About';
 import Proposal from './Proposal';
 
-import about from './assets/images/about.png';
-import group from './assets/icons/group.svg';
-import rocket from './assets/icons/rocket.svg';
-import tag from './assets/icons/tag.svg';
-import github from './assets/icons/github.svg';
-import instagram from './assets/icons/instagram.svg';
-import twitter from './assets/icons/twitter.svg';
+import github from '../assets/icons/github.svg';
+import instagram from '../assets/icons/instagram.svg';
+import twitter from '../assets/icons/twitter.svg';
 
 import '../assets/style/main/main.css';
 import '../assets/style/main/team.css';
