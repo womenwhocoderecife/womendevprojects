@@ -2,7 +2,7 @@
   background: url(../images/banner.png) no-repeat center center;
   background-size: cover;
   width: 100%;
-  height: 500px;
+  height: 661.48px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -24,7 +24,7 @@
   margin: 20px 0 20px 40px;
   padding: 20px;
   color: var(--light-secondary-color);
-  font: 700 26px 'Roboto', sans-serif;
+  font: 700 60px 'Lato' 'normal';
   max-width: 800px;
   width: 100%;
   text-align: left;
