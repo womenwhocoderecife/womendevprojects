@@ -12,12 +12,12 @@ class Team extends Component {
     this.state = { teams: [] };
   }
 
-  async componentDidMount() {
+  componentDidMount(){
     const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
     const targetUrl =
       'https://women-dev-projects.herokuapp.com/teams';
 
-    await fetch(proxyUrl + targetUrl)
+    fetch(proxyUrl + targetUrl)
       .then(results => {
         return results.json();
       })
@@ -45,11 +45,11 @@ class Team extends Component {
                 {this.checkLinkAvailability(team.twitter, twitter)}
               </ul>
             </li>
-          );
-        });
-        this.setState({ teams: teams });
-        console.log('state', this.state.teams);
-      });
+          )
+        })
+        this.setState({teams: teams});
+      })
+      .catch(error => console.log(error));
   }
 
   checkLinkAvailability(link, image) {
