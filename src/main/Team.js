@@ -9,10 +9,11 @@ import '../assets/style/main/team.css';
 class Team extends Component {
   constructor() {
     super();
-    this.state = { teams: [] };
+    this.state = { teams: [], isLoading: false };
   }
 
   componentDidMount(){
+    this.setState({ isLoading: true });
     const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
     const targetUrl =
       'https://women-dev-projects.herokuapp.com/teams';
@@ -47,7 +48,7 @@ class Team extends Component {
             </li>
           )
         })
-        this.setState({teams: teams});
+        this.setState({teams: teams, isLoading: false});
       })
       .catch(error => console.log(error));
   }
@@ -67,6 +68,12 @@ class Team extends Component {
   }
 
   render() {
+    const isLoading = this.state.isLoading;
+
+    if (isLoading) {
+      return <img src='https://media.giphy.com/media/l0HlymZ7Jv6JoiYjC/giphy.gif' alt='wonder women' />;
+    }
+
     return (
       <section className="team">
         <h2 className="main__title team__title">Equipe</h2>
