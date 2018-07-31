@@ -11,12 +11,14 @@ const Proposal = () => (
     <h2 className="main__title proposal__title">Nossa Proposta</h2>
     <div className="proposal__content">
       <div className="proposal__card">
-        <img
-          className="proposal__card__img"
-          src={group}
-          alt="Group"
-        />
-        <h3 className="proposal__card__title">Qualificar</h3>
+        <figure className="proposal__card__figure">
+          <img
+            className="proposal__card__img"
+            src={group}
+            alt="Group"
+          />
+          <h3 className="proposal__card__title">Qualificar</h3>
+        </figure>
         <p className="proposal__card__text">
           Uma iniciativa do Women Who Code Recife que tem o objetivo
           de desenvolver projetos pro-bonos e comerciais para colocar
@@ -30,14 +32,16 @@ const Proposal = () => (
       </div>
 
       <div className="proposal__card proposal__card__middle">
-        <img
-          className="proposal__card__img"
-          src={rocket}
-          alt="Rocket"
-        />
-        <h3 className="proposal__card__title">
-          Desenvolver o espírito empreendedor
-        </h3>
+        <figure className="proposal__card__figure">
+          <img
+            className="proposal__card__img"
+            src={rocket}
+            alt="Rocket"
+          />
+          <h3 className="proposal__card__title">
+            Desenvolver o espírito empreendedor
+          </h3>
+        </figure>
         <p className="proposal__card__text">
           Uma iniciativa do Women Who Code Recife que tem o objetivo
           de desenvolver projetos pro-bonos e comerciais para colocar
@@ -51,14 +55,16 @@ const Proposal = () => (
       </div>
 
       <div className="proposal__card">
-        <img
-          className="proposal__card__img"
-          src={tag}
-          alt="Tag HTML"
-        />
-        <h3 className="proposal__card__title">
-          Desenvolver Projetos
-        </h3>
+        <figure className="proposal__card__figure">
+          <img
+            className="proposal__card__img"
+            src={tag}
+            alt="Tag HTML"
+          />
+          <h3 className="proposal__card__title">
+            Desenvolver Projetos
+          </h3>
+        </figure>
         <p className="proposal__card__text">
           Uma iniciativa do Women Who Code Recife que tem o objetivo
           de desenvolver projetos pro-bonos e comerciais para colocar

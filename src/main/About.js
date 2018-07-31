@@ -1,6 +1,6 @@
 import React from 'react';
 
-import about from '../assets/images/about.png';
+import about from '../assets/images/hands.png';
 import '../assets/style/main/about.css';
 
 const About = () => (
@@ -17,7 +17,9 @@ const About = () => (
         mais visibilidade ,e aumentam sua competitividade no mercado.
       </p>
     </div>
-    <img className="about__img" src={about} alt="" />
+    <figure className="about__figure">
+      <img className="about__img" src={about} alt="" />
+    </figure>
   </section>
 );
 

@@ -10,7 +10,14 @@ import './assets/style/footer.css';
 
 const Footer = () => (
   <footer className="footer">
-    <img className="footer__img" src={logo} alt="logo" />
+    <figure className="footer__figure">
+      <img
+        className="footer__img"
+        src={logo}
+        alt="logo"
+        title="Women Dev Project"
+      />
+    </figure>
 
     <ul className="footer__list">
       <li className="footer__list__item">
@@ -61,17 +68,23 @@ const Footer = () => (
       <ul className="footer__list__social-network">
         <li className="footer__list__item__social-network">
           <a href="https://github.com/womenwhocoderecife">
-            <img src={github} alt="logo" />
+            <figure className="footer__figure">
+              <img src={github} alt="logo" title="github" />
+            </figure>
           </a>
         </li>
         <li className="footer__list__item__social-network">
           <a href="https://www.instagram.com/wwcoderecife/">
-            <img src={instagram} alt="logo" />
+            <figure className="footer__figure">
+              <img src={instagram} alt="logo" title="instagram" />
+            </figure>
           </a>
         </li>
         <li className="footer__list__item__social-network">
           <a href="https://twitter.com/WWCode_Recife">
-            <img src={twitter} alt="logo" />
+            <figure className="footer__figure">
+              <img src={twitter} alt="logo" title="twitter" />
+            </figure>
           </a>
         </li>
       </ul>
@@ -83,11 +96,14 @@ const Footer = () => (
       </li>
       <li>
         <a href="https://www.womenwhocode.com/recife">
-          <img
-            className="footer__img"
-            src={logoWwcode}
-            alt="logo WWCode"
-          />
+          <figure className="footer__figure">
+            <img
+              className="footer__img"
+              src={logoWwcode}
+              alt="logo WWCode"
+              title="logo WWCode"
+            />
+          </figure>
         </a>
       </li>
     </ul>
