@@ -12,12 +12,12 @@ class Team extends Component {
     this.state = { teams: [] };
   }
 
-  componentDidMount() {
+  async componentDidMount() {
     const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
     const targetUrl =
       'https://women-dev-projects.herokuapp.com/teams';
 
-    fetch(proxyUrl + targetUrl)
+    await fetch(proxyUrl + targetUrl)
       .then(results => {
         return results.json();
       })
@@ -36,28 +36,13 @@ class Team extends Component {
               </figure>
               <p className="team__card__text">{team.description}</p>
 
-              <ul className="footer__list__social-network">
-                <li className="footer__list__item__social-network">
-                  <a href={team.github}>
-                    <figure className="team__card__figure">
-                      <img src={github} alt="logo" />
-                    </figure>
-                  </a>
-                </li>
-                <li className="footer__list__item__social-network">
-                  <a href={team.instagram}>
-                    <figure className="team__card__figure">
-                      <img src={instagram} alt="logo" />
-                    </figure>
-                  </a>
-                </li>
-                <li className="footer__list__item__social-network">
-                  <a href={team.twitter}>
-                    <figure className="team__card__figure">
-                      <img src={twitter} alt="logo" />
-                    </figure>
-                  </a>
-                </li>
+              <ul className="footer__list__social-network hideElement">
+                {this.checkLinkAvailability(team.github, github)}
+                {this.checkLinkAvailability(
+                  team.instagram,
+                  instagram,
+                )}
+                {this.checkLinkAvailability(team.twitter, twitter)}
               </ul>
             </li>
           );
@@ -65,6 +50,20 @@ class Team extends Component {
         this.setState({ teams: teams });
         console.log('state', this.state.teams);
       });
+  }
+
+  checkLinkAvailability(link, image) {
+    return link ? (
+      <li className="footer__list__item__social-network">
+        <a href={link}>
+          <figure className="team__card__figure">
+            <img src={image} alt="logo" />
+          </figure>
+        </a>
+      </li>
+    ) : (
+      <li />
+    );
   }
 
   render() {
