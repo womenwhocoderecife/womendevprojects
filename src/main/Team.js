@@ -12,11 +12,11 @@ class Team extends Component{
     this.state = { teams: [] };
   }
 
-  componentDidMount(){
+  async componentDidMount(){
     const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
     const targetUrl = 'https://women-dev-projects.herokuapp.com/teams';
 
-    fetch(proxyUrl + targetUrl)
+    await fetch(proxyUrl + targetUrl)
     .then(results => {
         return results.json();
       }).then(data => {
@@ -33,16 +33,12 @@ class Team extends Component{
               <h3 className="team__card__title">{team.name}</h3>
               <p className="team__card__text">{team.description}</p>
 
-              <ul className='footer__list__social-network'>
-                <li className='footer__list__item__social-network'>
-                  <a href={team.github}><img src={github} alt='logo'/></a>
-                </li>
-                <li className='footer__list__item__social-network'>
-                  <a href={team.instagram}><img src={instagram} alt='logo'/></a>
-                </li>
-                <li className='footer__list__item__social-network'>
-                  <a href={team.twitter}><img src={twitter} alt='logo'/></a>
-                </li>
+              <ul className='footer__list__social-network hideElement'>
+              {this.checkLinkAvailability(team.github, github) }
+
+              {this.checkLinkAvailability(team.instagram, instagram)}
+
+              {this.checkLinkAvailability(team.twitter, twitter)}
               </ul>
             </li>
           )
@@ -50,6 +46,12 @@ class Team extends Component{
         this.setState({teams: teams});
         console.log("state", this.state.teams);
       })
+  }
+
+  checkLinkAvailability(link, image){
+    return link ?
+            <li className='footer__list__item__social-network'><a href={link}><img src={image} alt='logo'/></a></li>
+            : <li></li>;
   }
 
   render(){
