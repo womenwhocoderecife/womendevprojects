@@ -1,6 +1,6 @@
 import React from 'react';
 
-import FormContact from './FormContact';
+import Form from './Form';
 
 import '../assets/style/main/contact.css';
 import hands from '../assets/images/hands.png';
@@ -16,7 +16,7 @@ const Contact = () => (
       />
     </figure>
 
-    <FormContact />
+    <Form />
   </section>
 );
 
