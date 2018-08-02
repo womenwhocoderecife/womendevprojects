@@ -17,6 +17,10 @@
   }
 }
 
+.footer__figure {
+  margin: 0;
+}
+
 .footer__img {
   width: 150px;
 }

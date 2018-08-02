@@ -1,0 +1,17 @@
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.contact__figure {
+  margin: 0;
+  width: 50%;
+}
+
+.contact__img {
+  width: 100%;
+}

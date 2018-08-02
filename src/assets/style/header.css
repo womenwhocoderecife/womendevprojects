@@ -8,6 +8,11 @@
   padding: 40px;
 }
 
+.header__figure {
+  margin: 0;
+  width: 100%;
+}
+
 .header__img {
   margin: 40px 0 120px 40px;
   width: 200px;
@@ -24,7 +29,7 @@
   margin: 20px 0 20px 40px;
   padding: 20px;
   color: var(--light-secondary-color);
-  font: 700 60px 'Lato' 'normal';
+  font: 700 60px 'Roboto', sans-serif;
   max-width: 800px;
   width: 100%;
   text-align: left;

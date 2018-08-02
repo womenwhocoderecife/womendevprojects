@@ -6,7 +6,7 @@
 
 .team__title {
   text-align: center;
-  padding: 40px 0;
+  padding: 40px auto;
 }
 
 .team__content {
@@ -53,6 +53,10 @@
   }
 }
 
+.team__card__figure {
+  margin: 0;
+}
+
 .team__card__img{
   width: 100%;
   border-radius: 50%;
@@ -74,4 +78,3 @@
   margin: 0 0 5px 0;
   padding: 5px
 }
-
