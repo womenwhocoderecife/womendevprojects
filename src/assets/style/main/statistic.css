@@ -1,8 +1,7 @@
 
 .statistic{
     background: url(../../images/statistic.png) no-repeat center center;
-    /* background-size: cover; This property is duplicate, please keep just one */
-    /* width:100%; */
+    background-size: cover; 
     padding: 50px; 
 }
 
