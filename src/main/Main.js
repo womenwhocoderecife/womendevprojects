@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
+import '../assets/style/main/main.css';
+
 import About from './About';
 import Contact from './Contact';
 import Proposal from './Proposal';
 import Team from './Team';
 import Statistic from './Statistic';
-
-import '../assets/style/main/main.css';
 
 class Main extends Component {
   render() {

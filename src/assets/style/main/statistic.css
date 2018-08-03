@@ -1,12 +1,18 @@
 /* Flex - Pai*/
 .statistic{
     background: url(../../images/statistic.png) no-repeat center center;
+<<<<<<< HEAD
     background-size:'cover';
     width:100%;
     height: 100%;
     height: 253px;  
     flex-flow: row wrap;
     /* justify-content: space-around; */
+=======
+    background-size: cover;
+    padding: 50px;
+    width:100%;     
+>>>>>>> master
 }
 
 /* Flex - Item - Filho*/
