@@ -1,15 +1,38 @@
 .contact {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  margin: 0 auto;
+  width: 100%;
+  padding: 50px;
+}
+
+.contact__content {
   max-width: 1200px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto 0;
+}
+
+@media (min-width: 1020px) {
+  .contact__content {
+    flex-direction: row;
+  }
 }
 
 .contact__figure {
   margin: 0;
-  width: 50%;
+  width: 100%;
+}
+
+@media (min-width: 1020px) {
+  .contact__figure {
+    margin-right: 20px;
+  }
 }
 
 .contact__img {

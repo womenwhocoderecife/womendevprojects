@@ -23,7 +23,7 @@ class Form extends Component {
   render() {
     return (
       <form className="form">
-        <h2 className="main__title">
+        <h2 className="main__title form__title">
           Quer iniciar um novo projeto com a gente? Vamo!!
         </h2>
         <div className="form__field">
@@ -78,7 +78,11 @@ class Form extends Component {
             </label>
             <span className="form__require">*</span>
           </div>
-          <textarea className="form__textarea" id="message" />
+          <textarea
+            className="form__textarea"
+            id="message"
+            data-gramm="false"
+          />
         </div>
         <input
           className="form__submit"
