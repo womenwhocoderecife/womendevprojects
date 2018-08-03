@@ -1,81 +1,26 @@
-/* Flex - Pai*/
+
 .statistic{
     background: url(../../images/statistic.png) no-repeat center center;
-<<<<<<< HEAD
+
+
     background-size:'cover';
     width:100%;
     height: 100%;
     height: 253px;  
     flex-flow: row wrap;
-    /* justify-content: space-around; */
-=======
+   
+
     background-size: cover;
     padding: 50px;
     width:100%;     
->>>>>>> master
-}
-
-/* Flex - Item - Filho*/
-.statistic__content{
-    max-width: 1000px;
-    padding: 20px auto;
-    margin: 60px auto;
-    list-style: none;
-    justify-content: space-around;
-    
-}
-
-/* Item 1 - Filho*/
-.statistic__list{
-    display: inline-flex;
-    flex-direction: row;
-    align-items: flex-end;
-    margin: 0px 10px 0px 10px;
-    
-}
-
-/* Item 2 - Filho*/
-.statistic__tittle{
-    color: var(--light-secondary-color);
-    font: 1.4em 'Roboto', sans-serif;  
-    text-align: center;
-    padding: 40px 10px;
-    margin: 0;
-    font-weight: bolder;
-    flex-basis: 10%;
-    align-self:center;
-}
-/* Item 3 - Filho*/
-.statistic__text{
-    color: var(--light-secondary-color);
-    padding-left: -20px;
-    flex-basis: 10%;
-    align-self:flex-end;
-    
-}
 
 
-@media (max-width:720px){
-    .statistic__content{
-       display: inline-flex;
-       flex-direction: row;
-       flex-wrap:wrap;
-       
-       
-        
-    }
+    background-size: cover;
+    padding: 50px;
+    width:100%;     
+
 }
 
-@media (max-width:720px){
-    .statistic__list{
-       width: 20%;
-       margin: -50px 100px 30px 50px;
-       padding: 10px 10px 0px 10px; 
-       
-
-          
-    }
-}
 
 
 
