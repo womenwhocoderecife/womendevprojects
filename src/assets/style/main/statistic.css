@@ -1,66 +1,80 @@
+/* Flex - Pai*/
 .statistic{
     background: url(../../images/statistic.png) no-repeat center center;
     background-size:'cover';
-    padding: 50px;
     width:100%;
-    height: 253px;
-     
+    height: 100%;
+    height: 253px;  
+    flex-flow: row wrap;
+    /* justify-content: space-around; */
 }
 
+/* Flex - Item - Filho*/
 .statistic__content{
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px 0;
-    margin: 20px auto;
+    max-width: 1000px;
+    padding: 20px auto;
+    margin: 60px auto;
     list-style: none;
+    justify-content: space-around;
+    
 }
 
+/* Item 1 - Filho*/
 .statistic__list{
     display: inline-flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
+    align-items: flex-end;
+    margin: 0px 10px 0px 10px;
+    
 }
 
+/* Item 2 - Filho*/
 .statistic__tittle{
     color: var(--light-secondary-color);
-    font: 1.3em 'Roboto', sans-serif;  
+    font: 1.4em 'Roboto', sans-serif;  
     text-align: center;
-    padding: 40px 0;
-    margin: 0;
-    max-width: 150px;
-    width: 100%;
-    text-align:center;
-    font-weight: bolder;
-}
-
-.statistic__text{
-    color: var(--light-secondary-color);
-    text-align: left;
-    padding-left: -20px;
-}
-
-.statistic__tittle__coffee{
     padding: 40px 10px;
     margin: 0;
+    font-weight: bolder;
+    flex-basis: 10%;
+    align-self:center;
+}
+/* Item 3 - Filho*/
+.statistic__text{
     color: var(--light-secondary-color);
-    font: 1.2em 'Roboto', sans-serif; 
-    font-weight: bolder; 
+    padding-left: -20px;
+    flex-basis: 10%;
+    align-self:flex-end;
+    
 }
 
-@media (min-width: 1000px) {
-    .statistic__content {
-      flex-wrap: nowrap;
-    }
-  }
 
-@media (min-width: 720px) {
-    .statistic__list {
-      width: 220px;
-      margin-top: -30px
+@media (max-width:720px){
+    .statistic__content{
+       display: inline-flex;
+       flex-direction: row;
+       flex-wrap:wrap;
+       
+       
+        
     }
-  }
+}
+
+@media (max-width:720px){
+    .statistic__list{
+       width: 20%;
+       margin: -50px 100px 30px 50px;
+       padding: 10px 10px 0px 10px; 
+       
+
+          
+    }
+}
+
+
+
+
+
+ 
+
+  
