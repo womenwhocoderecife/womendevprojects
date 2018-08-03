@@ -8,8 +8,9 @@ import '../assets/style/main/statistic.css';
 
 
 const Statistic = () => (
-    <section className="statistic">
-      <ul className="statistic__content">
+    //flex - Father
+    <section className="statistic"> 
+      <ul className="statistic__content"> 
          <li className="statistic__list">
              <img className="statistic__img" src={calendar} alt="calendar" /> 
             <h4 className="statistic__tittle">15</h4>
@@ -24,7 +25,7 @@ const Statistic = () => (
 
         <li className="statistic__list">
              <img className="statistic__img" src={coffee} alt="coffee" /> 
-            <h4 className="statistic__tittle__coffee">50</h4>
+            <h4 className="statistic__tittle">50</h4>
             <p className="statistic__text">Cafés</p>
         </li>  
 
