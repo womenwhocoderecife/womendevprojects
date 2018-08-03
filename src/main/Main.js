@@ -6,6 +6,7 @@ import About from './About';
 import Contact from './Contact';
 import Proposal from './Proposal';
 import Team from './Team';
+import Statistic from './Statistic';
 
 class Main extends Component {
   render() {
@@ -14,7 +15,9 @@ class Main extends Component {
         <About />
         <Proposal />
         <Team />
+        <Statistic  />
         <Contact />
+        
       </main>
     );
   }
