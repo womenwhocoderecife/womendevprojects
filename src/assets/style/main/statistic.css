@@ -1,8 +1,9 @@
+
 .statistic{
     background: url(../../images/statistic.png) no-repeat center center;
-    background-size: cover;
-    padding: 50px;
-    width:100%;     
+    background-size: cover; 
+    width: 100%;
+    padding: 50px; 
 }
 
 .statistic__list {
@@ -14,7 +15,9 @@
     grid-template-columns: 300px;
     justify-content: center;
     list-style: none;
-}
+    justify-content: space-around;
+    
+} 
 
 @media (min-width: 800px) {
     .statistic__list {
