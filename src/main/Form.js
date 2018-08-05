@@ -12,7 +12,7 @@ class Form extends Component {
   }
 
   handleChange(event) {
-    this.setState({ value: event.target.value });
+    this.setState({ value: event.target.value.toUpperCase() });
   }
 
   handleSubmit(event) {
@@ -32,6 +32,8 @@ class Form extends Component {
             id="name"
             type="text"
             placeholder="seu nome"
+            value={this.state.value}
+            onChange={this.handleChange}
           />
           <div className="form__label-group">
             <label className="form__label" htmlFor="name">
