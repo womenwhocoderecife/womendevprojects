@@ -9,8 +9,8 @@ import '../assets/style/main/proposal.css';
 const Proposal = () => (
   <section className="proposal">
     <h2 className="main__title proposal__title">Nossa Proposta</h2>
-    <div className="proposal__content">
-      <div className="proposal__card">
+    <div className="proposal__content ">
+      <div className="proposal__card qualify">
         <figure className="proposal__card__figure">
           <img
             className="proposal__card__img"
@@ -31,7 +31,7 @@ const Proposal = () => (
         </p>
       </div>
 
-      <div className="proposal__card proposal__card__middle">
+      <div className="proposal__card engage">
         <figure className="proposal__card__figure">
           <img
             className="proposal__card__img"
@@ -54,7 +54,7 @@ const Proposal = () => (
         </p>
       </div>
 
-      <div className="proposal__card">
+      <div className="proposal__card projects">
         <figure className="proposal__card__figure">
           <img
             className="proposal__card__img"
