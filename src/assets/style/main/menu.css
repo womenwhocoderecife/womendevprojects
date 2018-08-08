@@ -1,0 +1,51 @@
+/* --------------------------
+  Main Styles
+--------------------------- */
+
+.menu__list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5em;
+}
+
+.menu__list a{
+    display: block;
+	color: var( --light-secondary-color);
+	font-size: 1.125em;
+	font-weight: 300;
+	text-align: center;
+	padding: .4em;
+	border-bottom: 1px solid #ebecec;
+}
+
+.menu__list a:hover {
+	color: var( --dark-primary-color);
+	border-bottom-color: var( --dark-primary-color);
+}
+
+/* --------------------------
+  Media Queries
+--------------------------- */
+
+@media (min-width: 769px){
+    .menu__list{
+        margin-top: 3em;
+		flex-direction: row;
+		justify-content: space-between;
+    }
+    .menu__list a{
+        border-bottom-color: transparent;
+    }
+}
+
+@media (min-width: 1025px){
+    .menu__list{
+        margin-top: 0;
+		align-self: center;
+    }
+
+    .menu__list li{
+        margin-left: .65em;
+		margin-right: .65em;
+    }
+}
