@@ -6,6 +6,9 @@
   max-width: 1200px;
   width: 100%;
   padding: 50px;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 
 @media (min-width: 1020px) {
@@ -16,6 +19,7 @@
 
 .about__content {
   width: 100%;
+  grid-column:  1 / 7;
 }
 
 @media (min-width: 1020px) {
@@ -46,6 +50,7 @@
 .about__figure {
   width: 100%;
   margin: 0;
+  grid-column:  8 / 13;
 }
 
 .about__img {
