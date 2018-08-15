@@ -9,7 +9,7 @@ import './assets/style/app.css';
 class App extends Component {
   render() {
     return (
-      <div className="app">
+      <div className="app" id="home">
         <Header />
         <Main />
         <Footer />

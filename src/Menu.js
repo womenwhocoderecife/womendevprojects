@@ -4,23 +4,32 @@ import './assets/style/menu.css';
 import logo from './assets/images/logo.png';
 
 const Menu = () => (
-    <header class="main-header">
-    <a class="site-logo" href="/">
-        <img className="header__img" src={logo} alt="Logo Women Dev Projects" />
-    </a>
-    
-    <nav class="menu">
+    <nav className="menu">
         <ul className="menu__list">
-            <li className="menu__list__item"><a href="#">Home</a></li>
-            <li className="menu__list__item"><a href="#">Sobre</a></li>
-            <li className="menu__list__item"><a href="#">Nossa Proposta</a></li>
-            <li className="menu__list__item"><a href="#">Equipe</a></li>
-            <li className="menu__list__item"><a href="#">Portfólio</a></li>
-            <li className="menu__list__item"><a href="#">Depoimentos</a></li>
-            <li className="menu__list__item"><a href="#">Contato</a></li>
+            <li>
+                <a className="menu__logo" href="/">
+                    <figure className="menu__figure">
+                        <img className="menu__img" src={logo} alt="Logo Women Dev Projects" />
+                    </figure>
+                </a>
+            </li>
+            <li className="menu__list__item">
+                <a className="menu__list__link" href="#home">Home</a>
+            </li>
+            <li className="menu__list__item">
+                <a className="menu__list__link" href="#about">Sobre</a>
+            </li>
+            <li className="menu__list__item">
+                <a className="menu__list__link" href="#proposal">Nossa Proposta</a>
+            </li>
+            <li className="menu__list__item">
+                <a className="menu__list__link" href="#team">Equipe</a>
+            </li>
+            <li className="menu__list__item">
+                <a className="menu__list__link" href="#contact">Contato</a>
+            </li>
         </ul>
     </nav>
-</header>  
 );
 
 export default Menu;

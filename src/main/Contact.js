@@ -6,7 +6,7 @@ import '../assets/style/main/contact.css';
 import hands from '../assets/images/hands.png';
 
 const Contact = () => (
-  <section className="contact">
+  <section className="contact" id="contact">
     <div className="contact__content">
       <figure className="contact__figure">
         <img
