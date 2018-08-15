@@ -2,7 +2,7 @@
   background: url(../images/banner.png) no-repeat center center;
   background-size: cover;
   width: 100%;
-  padding: 40px;
+  padding: 100px;
 
   grid-column: 1 / -1;
 }
@@ -12,17 +12,6 @@
   width: 100%;
 }
 
-.header__img {
-  margin: 40px 0 120px 40px;
-  width: 200px;
-}
-
-@media(min-width: 820px) {
-  .header__img {
-    margin: 80px 0 10px 80px;
-    width: 300px;
-  }
-}
 
 .header__text {
   margin: 20px 0 20px 40px;
