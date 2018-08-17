@@ -4,7 +4,7 @@ import about from '../assets/images/hands.png';
 import '../assets/style/main/about.css';
 
 const About = () => (
-  <section className="about">
+  <section className="about" id="about">
     <div className="about__content">
       <h2 className="main__title about__title">Sobre</h2>
       <p className="about__text">

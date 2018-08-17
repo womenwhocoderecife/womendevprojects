@@ -12,7 +12,7 @@ class Team extends Component {
     this.state = { teams: [], isLoading: false };
   }
 
-  componentDidMount(){
+  componentDidMount() {
     this.setState({ isLoading: true });
     const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
     const targetUrl =
@@ -48,7 +48,7 @@ class Team extends Component {
             </li>
           )
         })
-        this.setState({teams: teams, isLoading: false});
+        this.setState({ teams: teams, isLoading: false });
       })
       .catch(error => console.log(error));
   }
@@ -63,8 +63,8 @@ class Team extends Component {
         </a>
       </li>
     ) : (
-      <li />
-    );
+        <li />
+      );
   }
 
   render() {
@@ -75,7 +75,7 @@ class Team extends Component {
     }
 
     return (
-      <section className="team">
+      <section className="team" id="team">
         <h2 className="main__title team__title">Equipe</h2>
         <ul className="team__content">{this.state.teams}</ul>
       </section>

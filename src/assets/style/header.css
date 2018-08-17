@@ -2,20 +2,14 @@
   background: url(../images/banner.png) no-repeat center center;
   background-size: cover;
   width: 100%;
-  padding: 100px;
+  padding: 50px;
 
   grid-column: 1 / -1;
 }
 
-.header__figure {
-  margin: 0;
-  width: 100%;
-}
-
-
 .header__text {
-  margin: 20px 0 20px 40px;
-  padding: 20px;
+  margin: 20px 0;
+  padding: 20px 0;
   color: var(--light-secondary-color);
   font: 700 60px 'Roboto', sans-serif;
   max-width: 800px;
@@ -38,6 +32,5 @@
 @media(min-width: 820px) {
   .header__text {
     font-size: 45px;
-    margin-left: 40px;
   }
 }

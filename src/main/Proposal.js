@@ -7,7 +7,7 @@ import tag from '../assets/icons/tag.svg';
 import '../assets/style/main/proposal.css';
 
 const Proposal = () => (
-  <section className="proposal">
+  <section className="proposal" id="proposal">
     <h2 className="main__title proposal__title">Nossa Proposta</h2>
     <div className="proposal__content ">
       <div className="proposal__card qualify">
