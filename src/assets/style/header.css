@@ -2,9 +2,14 @@
   background: url(../images/banner.png) no-repeat center center;
   background-size: cover;
   width: 100%;
-  padding: 50px;
 
   grid-column: 1 / -1;
+}
+
+@media (min-width: 890px){
+  .header {
+    padding: 20px 50px 50px 50px;
+  }
 }
 
 .header__text {
