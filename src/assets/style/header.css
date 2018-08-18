@@ -12,11 +12,21 @@
   }
 }
 
+.header__figure {
+  margin: 20px 50px;
+}
+
+@media (min-width: 890px) {
+  .header__figure {
+    display: none;
+  }
+}
+
 .header__text {
   margin: 20px 0;
-  padding: 20px 0;
+  padding: 200px 50px 50px;
   color: var(--light-secondary-color);
-  font: 700 60px 'Roboto', sans-serif;
+  font: 700 34px 'Roboto', sans-serif;
   max-width: 800px;
   width: 100%;
   text-align: left;
@@ -24,18 +34,19 @@
 
 @media(min-width: 570px) {
   .header__text {
-    font-size: 34px;
+    font-size: 36px;
   }
 }
 
 @media(min-width: 730px) {
   .header__text {
-    font-size: 40px;
+    font-size: 42px;
   }
 }
 
-@media(min-width: 820px) {
+@media(min-width: 890px) {
   .header__text {
-    font-size: 45px;
+    font-size: 46px;
+    padding: 20px 0;
   }
 }
