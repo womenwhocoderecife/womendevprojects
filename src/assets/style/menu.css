@@ -1,9 +1,46 @@
+.menu-container {
+	position: relative;
+}
+
+.menu__button {
+	background: #ff50cd;
+	color: var(--light-secondary-color);
+	border: 0;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	text-align: center;
+}
+
+.menu__button__icon {
+	padding-right: 10px;
+}
+
 .menu{
-		display: grid;
-		grid-template-columns: auto 1fr;
-		grid-gap: 10px;
-		justify-items: end;
-		align-items: start;
+		width: 100vw;
+		height: 100vh;
+		background: rgba(206, 161, 255, .5);
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: flex-end;
+		align-items: center;
+		padding-top: 50px;
+}
+
+@media (min-width: 890px){
+  .menu {
+		width: 100%;
+		height: 100%;
+		background: none;
+		flex-direction: row;
+		padding: 0;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
 }
 
 .menu__figure {
@@ -14,20 +51,55 @@
 	object-fit: contain;
 }
 
-[aria-controls="menu-list"] {
-	display: none;
+.menu--show-menu {
+	/* display: block; */
+}
+
+@media (min-width: 890px){
+  .menu--show-menu {
+		/* display: none; */
+	}
+}
+
+@media (min-width: 890px){
+  .menu__button {
+		display: none;
+	}
+}
+
+.menu__button--open {
+
+}
+
+.menu__button--close {
+
 }
 
 .menu__list {
-	margin: 0;
+	margin: 10px 0 0 0;
 	padding: 0;
 	max-width: 650px;
 	width: 100%;
 	list-style: none;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(80px, auto));
-	justify-items: end;
-	grid-gap: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+}
+
+@media (min-width: 890px){
+  .menu__list {
+		/* transform: rotateX(90deg);
+		transition: all .5s; */
+		flex-direction: column;
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+}
+
+.menu__list__item {
+	margin: 10px;
 }
 
 .menu__list__link {
