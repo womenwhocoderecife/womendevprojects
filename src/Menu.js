@@ -23,30 +23,31 @@ class Menu extends Component {
   }
 
   render() {
-    // show menu
     let showMenu;
+    let menuBtn;
 
     if (this.state.open) {
-      showMenu = 'menu--show-menu';
-    } else {
       showMenu = '';
+      menuBtn = 'X Menu';
+
+    } else {
+      showMenu = 'menu--show-menu';
+      menuBtn = '☰ Menu';
     }
 
     return (
       <div className="menu-container">
         <button
-          className={`menu__button ${showMenu}`}
+          className="menu__button"
           onClick={this.openMenu}
         >
-          <span className="menu__button__icon">☰</span>
-          Menu
+            { menuBtn }
         </button>
         <button
           className={`menu__button ${showMenu}`}
           onClick={this.closeMenu}
         >
-          <span className="menu__button__icon">×</span>
-          Menu
+            { menuBtn }
         </button>
         <nav className={`menu ${showMenu}`}>
           <a className="menu__logo" href="/">
