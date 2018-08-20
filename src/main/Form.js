@@ -13,7 +13,10 @@ class Form extends Component {
     this.validator = new FormValidator(validations.login_rules);
 
     this.state = {
+      name: '',
       email: '',
+      subject: '',
+      message: '',
       validation: this.validator.valid()
     };
 
@@ -49,7 +52,7 @@ class Form extends Component {
       this.state.validation
 
     return (
-      <form className="form">
+      <form className="form" onSubmit={this.handleFormSubmit}>
         <h2 className="main__title form__title">
           Quer iniciar um novo projeto com a gente? Vamo!!
         </h2>
@@ -59,9 +62,11 @@ class Form extends Component {
             id="name"
             type="text"
             required
-            placeholder="seu nome"
+            name="name"
+            placeholder="Informa teu nome aqui"
             onChange={this.handleInputChange}
           />
+          <span className="form__validate">{validation.name.message}</span>
           <div className="form__label-group">
             <label className="form__label" htmlFor="name">
               Nome
@@ -75,9 +80,12 @@ class Form extends Component {
             className="form__input"
             id="email"
             type="email"
+            name="email"
             required
             placeholder="seu e-mail"
+            onChange={this.handleInputChange}
           />
+          <span className="form__validate">{validation.email.message}</span>
           <div className="form__label-group">
             <label className="form__label" htmlFor="email">
               E-mail
@@ -91,9 +99,12 @@ class Form extends Component {
             className="form__input"
             id="subject"
             type="text"
+            name="subject"
             required
             placeholder="título da mensagem"
+            onChange={this.handleInputChange}
           />
+          <span className="form__validate">{validation.subject.message}</span>
           <div className="form__label-group">
             <label className="form__label" htmlFor="subject">
               Assunto
@@ -109,11 +120,14 @@ class Form extends Component {
             </label>
             <span className="form__require">*</span>
           </div>
+          <span className="form__validate">{validation.message.message}</span>
           <textarea
             className="form__textarea"
             id="message"
+            name="message"
             required
             data-gramm="false"
+            onChange={this.handleInputChange}
           />
         </div>
         <input
