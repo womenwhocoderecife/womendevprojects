@@ -56,7 +56,14 @@ class Form extends Component {
         <h2 className="main__title form__title">
           Quer iniciar um novo projeto com a gente? Vamo!!
         </h2>
+        
         <div className="form__field">
+          <div className="form__label-group">
+            <span className="form__require">*</span>
+            <label className="form__label" htmlFor="name">
+              Nome
+            </label>
+          </div>
           <input
             className="form__input"
             id="name"
@@ -67,15 +74,15 @@ class Form extends Component {
             onChange={this.handleInputChange}
           />
           <span className="form__validate">{validation.name.message}</span>
-          <div className="form__label-group">
-            <label className="form__label" htmlFor="name">
-              Nome
-            </label>
-            <span className="form__require">*</span>
-          </div>
         </div>
 
         <div className="form__field">
+          <div className="form__label-group">
+            <span className="form__require">*</span>
+            <label className="form__label" htmlFor="email">
+              E-mail
+            </label>
+          </div>
           <input
             className="form__input"
             id="email"
@@ -86,15 +93,15 @@ class Form extends Component {
             onChange={this.handleInputChange}
           />
           <span className="form__validate">{validation.email.message}</span>
-          <div className="form__label-group">
-            <label className="form__label" htmlFor="email">
-              E-mail
-            </label>
-            <span className="form__require">*</span>
-          </div>
         </div>
 
         <div className="form__field">
+          <div className="form__label-group">
+            <span className="form__require">*</span>
+            <label className="form__label" htmlFor="subject">
+              Assunto
+            </label>
+          </div>
           <input
             className="form__input"
             id="subject"
@@ -105,20 +112,14 @@ class Form extends Component {
             onChange={this.handleInputChange}
           />
           <span className="form__validate">{validation.subject.message}</span>
-          <div className="form__label-group">
-            <label className="form__label" htmlFor="subject">
-              Assunto
-            </label>
-            <span className="form__require">*</span>
-          </div>
         </div>
 
         <div className="form__field">
           <div className="form__label-group">
+            <span className="form__require">*</span>
             <label className="form__label" htmlFor="message">
               Mensagem
             </label>
-            <span className="form__require">*</span>
           </div>
           <span className="form__validate">{validation.message.message}</span>
           <textarea

@@ -7,13 +7,13 @@ export default {
       field: 'name',
       method: validator.isEmpty,
       validWhen: false,
-      message: 'Informa aqui teu nome por favor.'
+      message: 'Você precisa digitar seu nome.'
     },
     {
       field: 'email',
       method: validator.isEmpty,
       validWhen: false,
-      message: 'Informa um email, que vamos tentar te dá um retorno o mais rápido possível.'
+      message: 'Informa teu email, que vamos tentar te dá um retorno o mais rápido possível.'
     },
     {
       field: 'email',
@@ -25,7 +25,7 @@ export default {
       field: 'subject',
       method: validator.isEmpty,
       validWhen: false,
-      message: 'Informa pra gente sobre o que você está entrando em contato conosco.'
+      message: 'Informa pra gente um título do motivo do teu contato.'
     },
     {
       field: 'message',

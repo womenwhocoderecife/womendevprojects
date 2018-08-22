@@ -68,6 +68,7 @@
   margin-top: 5px;
   border: 1px solid var(--primary-color);
   color: var(--secondary-color);
+  min-height: 2ch;
 }
 
 textarea:active {
@@ -104,4 +105,9 @@ textarea:active {
 
 .form__submit--inactive:active {
     background-image: none;
+}
+
+.form__validate {
+  transition: opacity 300ms ease 0s;
+  color: rgb(188, 9, 31);
 }
