@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import './assets/style/menu.css';
-import logo from './assets/images/logo.png';
+import './index.css';
+import logo from '../assets/images/logo.png';
 
 class Menu extends Component {
   constructor() {
@@ -29,7 +29,6 @@ class Menu extends Component {
     if (this.state.open) {
       showMenu = '';
       menuBtn = 'X Menu';
-
     } else {
       showMenu = 'menu--show-menu';
       menuBtn = '☰ Menu';
@@ -37,17 +36,14 @@ class Menu extends Component {
 
     return (
       <div className="menu-container">
-        <button
-          className="menu__button"
-          onClick={this.openMenu}
-        >
-            { menuBtn }
+        <button className="menu__button" onClick={this.openMenu}>
+          {menuBtn}
         </button>
         <button
           className={`menu__button ${showMenu}`}
           onClick={this.closeMenu}
         >
-            { menuBtn }
+          {menuBtn}
         </button>
         <nav className={`menu ${showMenu}`}>
           <a className="menu__logo" href="/">

@@ -1,12 +1,12 @@
 import React from 'react';
 
-import logo from './assets/images/logo.png';
-import github from './assets/icons/github.svg';
-import instagram from './assets/icons/instagram.svg';
-import twitter from './assets/icons/twitter.svg';
-import logoWwcode from './assets/images/logo-wwcode.png';
+import logo from '../assets/images/logo.png';
+import github from '../assets/icons/github.svg';
+import instagram from '../assets/icons/instagram.svg';
+import twitter from '../assets/icons/twitter.svg';
+import logoWwcode from '../assets/images/logo-wwcode.png';
 
-import './assets/style/footer.css';
+import './index.css';
 
 const Footer = () => (
   <footer className="footer">

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-import Header from './Header';
-import Main from './main/Main';
-import Footer from './Footer';
+import Header from '../Header';
+import Main from '../main/Main';
+import Footer from '../Footer';
 
-import './assets/style/app.css';
+import './index.css';
 
 class App extends Component {
   render() {

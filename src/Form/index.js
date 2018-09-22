@@ -3,11 +3,10 @@ import React, { Component } from 'react';
 import FormValidator from './FormValidator';
 import validations from './validations';
 
-import '../assets/style/main/form.css';
+import './index.css';
 
 class Form extends Component {
   constructor(props) {
-
     super(props);
 
     this.validator = new FormValidator(validations.login_rules);
@@ -17,7 +16,7 @@ class Form extends Component {
       email: '',
       subject: '',
       message: '',
-      validation: this.validator.valid()
+      validation: this.validator.valid(),
     };
 
     this.submitted = false;
@@ -31,7 +30,7 @@ class Form extends Component {
     this.setState({
       [event.target.name]: event.target.value,
     });
-  }
+  };
 
   handleFormSubmit = event => {
     event.preventDefault();
@@ -43,20 +42,19 @@ class Form extends Component {
     if (validation.isValid) {
       // handle actual form submission here
     }
-  }
+  };
 
   render() {
-
-    let validation = this.submitted ?
-      this.validator.validate(this.state) :
-      this.state.validation
+    let validation = this.submitted
+      ? this.validator.validate(this.state)
+      : this.state.validation;
 
     return (
       <form className="form" onSubmit={this.handleFormSubmit}>
         <h2 className="main__title form__title">
           Quer iniciar um novo projeto com a gente? Vamo!!
         </h2>
-        
+
         <div className="form__field">
           <div className="form__label-group">
             <span className="form__require">*</span>
@@ -73,7 +71,9 @@ class Form extends Component {
             placeholder="Informa teu nome aqui"
             onChange={this.handleInputChange}
           />
-          <span className="form__validate">{validation.name.message}</span>
+          <span className="form__validate">
+            {validation.name.message}
+          </span>
         </div>
 
         <div className="form__field">
@@ -92,7 +92,9 @@ class Form extends Component {
             placeholder="seu e-mail"
             onChange={this.handleInputChange}
           />
-          <span className="form__validate">{validation.email.message}</span>
+          <span className="form__validate">
+            {validation.email.message}
+          </span>
         </div>
 
         <div className="form__field">
@@ -111,7 +113,9 @@ class Form extends Component {
             placeholder="título da mensagem"
             onChange={this.handleInputChange}
           />
-          <span className="form__validate">{validation.subject.message}</span>
+          <span className="form__validate">
+            {validation.subject.message}
+          </span>
         </div>
 
         <div className="form__field">
@@ -121,7 +125,9 @@ class Form extends Component {
               Mensagem
             </label>
           </div>
-          <span className="form__validate">{validation.message.message}</span>
+          <span className="form__validate">
+            {validation.message.message}
+          </span>
           <textarea
             className="form__textarea"
             id="message"

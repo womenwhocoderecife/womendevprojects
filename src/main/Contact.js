@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Form from './Form';
+import Form from '../Form';
 
 import '../assets/style/main/contact.css';
 import hands from '../assets/images/hands.png';
