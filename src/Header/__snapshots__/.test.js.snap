@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header has a valid snapshot 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="menu-container"
+  >
+    <button
+      className="menu__button"
+      onClick={[Function]}
+    >
+      ☰ Menu
+    </button>
+    <button
+      className="menu__button menu--show-menu"
+      onClick={[Function]}
+    >
+      ☰ Menu
+    </button>
+    <nav
+      className="menu menu--show-menu"
+    >
+      <a
+        className="menu__logo"
+        href="/"
+      >
+        <figure
+          className="menu__figure"
+        >
+          <img
+            alt="Logo Women Dev Projects"
+            className="menu__img"
+            src="logo.png"
+          />
+        </figure>
+      </a>
+      <ul
+        className="menu__list"
+      >
+        <li
+          className="menu__list__item"
+        >
+          <a
+            className="menu__list__link"
+            href="#home"
+          >
+            Home
+          </a>
+        </li>
+        <li
+          className="menu__list__item"
+        >
+          <a
+            className="menu__list__link"
+            href="#about"
+          >
+            Sobre
+          </a>
+        </li>
+        <li
+          className="menu__list__item"
+        >
+          <a
+            className="menu__list__link"
+            href="#proposal"
+          >
+            Nossa Proposta
+          </a>
+        </li>
+        <li
+          className="menu__list__item"
+        >
+          <a
+            className="menu__list__link"
+            href="#team"
+          >
+            Equipe
+          </a>
+        </li>
+        <li
+          className="menu__list__item"
+        >
+          <a
+            className="menu__list__link"
+            href="#contact"
+          >
+            Contato
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <a
+    className="menu__logo"
+    href="/"
+  >
+    <figure
+      className="menu__figure header__figure"
+    >
+      <img
+        alt="Logo Women Dev Projects"
+        className="menu__img"
+        src="logo.png"
+      />
+    </figure>
+  </a>
+  <h1
+    className="header__text"
+  >
+    Juntas! Desenvolvendo Tecnologia com Impacto
+  </h1>
+</header>
+`;
