@@ -20,14 +20,7 @@ const Proposal = () => (
           <h3 className="proposal__card__title">Qualificar</h3>
         </figure>
         <p className="proposal__card__text">
-          Uma iniciativa do Women Who Code Recife que tem o objetivo
-          de desenvolver projetos pro-bonos e comerciais para colocar
-          em prática os conhecimentos adquiridos nos meetups e grupos
-          de estudos do WWCode. Oportunidade para aquisição de
-          experiência profissional com atuação em projetos reais.
-          Acreditamos que com a criação de um portfólio próprio os
-          profissionais ganham mais visibilidade ,e aumentam sua
-          competitividade no mercado.
+        Protagonização em <br></br>treinamentos e Meetups do WWcode
         </p>
       </div>
 
@@ -43,14 +36,9 @@ const Proposal = () => (
           </h3>
         </figure>
         <p className="proposal__card__text">
-          Uma iniciativa do Women Who Code Recife que tem o objetivo
-          de desenvolver projetos pro-bonos e comerciais para colocar
-          em prática os conhecimentos adquiridos nos meetups e grupos
-          de estudos do WWCode. Oportunidade para aquisição de
-          experiência profissional com atuação em projetos reais.
-          Acreditamos que com a criação de um portfólio próprio os
-          profissionais ganham mais visibilidade ,e aumentam sua
-          competitividade no mercado.
+        Desenvolvimento de liderança<br></br> técnica e gerenciamento de projetos.<br></br>
+
+        Análise de negócios, lucro nos<br></br> serviços prestados. %$ doado<br></br> para a comunidade será<br></br> revertido em cursos, livros,<br></br> coffeebreak, conferências, etc..
         </p>
       </div>
 
@@ -66,14 +54,9 @@ const Proposal = () => (
           </h3>
         </figure>
         <p className="proposal__card__text">
-          Uma iniciativa do Women Who Code Recife que tem o objetivo
-          de desenvolver projetos pro-bonos e comerciais para colocar
-          em prática os conhecimentos adquiridos nos meetups e grupos
-          de estudos do WWCode. Oportunidade para aquisição de
-          experiência profissional com atuação em projetos reais.
-          Acreditamos que com a criação de um portfólio próprio os
-          profissionais ganham mais visibilidade ,e aumentam sua
-          competitividade no mercado.
+          Desenvolvimento Web<br></br>
+          App Mobile<br></br>
+          Diversas Tecnologias
         </p>
       </div>
     </div>

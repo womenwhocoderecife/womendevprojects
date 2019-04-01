@@ -52,7 +52,7 @@ class Form extends Component {
     return (
       <form className="form" onSubmit={this.handleFormSubmit}>
         <h2 className="main__title form__title">
-          Quer iniciar um novo projeto com a gente? Vamo!!
+          Quer iniciar um novo projeto com a gente? Vamos!!
         </h2>
 
         <div className="form__field">
@@ -68,7 +68,7 @@ class Form extends Component {
             type="text"
             required
             name="name"
-            placeholder="Informa teu nome aqui"
+            placeholder="Nome Completo"
             onChange={this.handleInputChange}
           />
           <span className="form__validate">

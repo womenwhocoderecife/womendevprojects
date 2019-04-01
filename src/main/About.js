@@ -1,12 +1,13 @@
 import React from 'react';
 
-import about from '../assets/images/hands.png';
+// import about from '../assets/images/hands.png';
+import about from '../assets/images/about2.jpg';
 import '../assets/style/main/about.css';
 
 const About = () => (
   <section className="about" id="about">
     <div className="about__content">
-      <h2 className="main__title about__title">Sobre</h2>
+      <h2 className="main__title about__title">WomenDev Projects</h2>
       <p className="about__text">
         Uma iniciativa do Women Who Code Recife que tem o objetivo de
         desenvolver projetos pro-bonos e comerciais para colocar em

@@ -71,6 +71,14 @@ class Menu extends Component {
               <a className="menu__list__link" href="#proposal">
                 Nossa Proposta
               </a>
+              
+            </li>
+
+            <li className="menu__list__item">
+              <a className="menu__list__link" href="#projects">
+                Projetos
+              </a>
+              
             </li>
             <li className="menu__list__item">
               <a className="menu__list__link" href="#team">
