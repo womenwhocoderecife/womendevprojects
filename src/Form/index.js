@@ -89,7 +89,7 @@ class Form extends Component {
             type="email"
             name="email"
             required
-            placeholder="seu e-mail"
+            placeholder="Seu e-mail"
             onChange={this.handleInputChange}
           />
           <span className="form__validate">
@@ -110,7 +110,7 @@ class Form extends Component {
             type="text"
             name="subject"
             required
-            placeholder="título da mensagem"
+            placeholder="Título da mensagem"
             onChange={this.handleInputChange}
           />
           <span className="form__validate">
