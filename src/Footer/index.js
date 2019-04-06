@@ -21,9 +21,9 @@ const Footer = () => (
 
     <ul className="footer__list">
       <li className="footer__list__item">
-        <h3 className="footer__list__title">Sobre</h3>
+        <a className="footer__list__title" href="#home">Home</a>
       </li>
-      <li className="footer__list__item">
+      {/* <li className="footer__list__item">
         <a className="footer__list__link" href="">
           O que é
         </a>
@@ -37,14 +37,14 @@ const Footer = () => (
         <a className="footer__list__link" href="">
           FAQ
         </a>
-      </li>
+      </li> */}
     </ul>
 
     <ul className="footer__list">
       <li className="footer__list__item">
-        <h3 className="footer__list__title">Projetos</h3>
+        <a className="footer__list__title" href="#about">Sobre</a>
       </li>
-      <li className="footer__list__item">
+      {/* <li className="footer__list__item">
         <a className="footer__list__link" href="">
           Pro-Bonos
         </a>
@@ -58,11 +58,97 @@ const Footer = () => (
         <a className="footer__list__link" href="">
           Clientes
         </a>
+      </li> */}
+    </ul>
+
+
+    <ul className="footer__list">
+      <li className="footer__list__item">
+        <a className="footer__list__title" href="#proposal">Nossa Proposta</a>
       </li>
+      {/* <li className="footer__list__item">
+        <a className="footer__list__link" href="">
+          Pro-Bonos
+        </a>
+      </li>
+      <li className="footer__list__item">
+        <a className="footer__list__link" href="">
+          Comerciais
+        </a>
+      </li>
+      <li className="footer__list__item">
+        <a className="footer__list__link" href="">
+          Clientes
+        </a>
+      </li> */}
+    </ul>
+
+    <ul className="footer__list">
+      <li className="footer__list__item">
+        <a className="footer__list__title" href="#team">Equipe</a>
+      </li>
+      {/* <li className="footer__list__item">
+        <a className="footer__list__link" href="">
+          Pro-Bonos
+        </a>
+      </li>
+      <li className="footer__list__item">
+        <a className="footer__list__link" href="">
+          Comerciais
+        </a>
+      </li>
+      <li className="footer__list__item">
+        <a className="footer__list__link" href="">
+          Clientes
+        </a>
+      </li> */}
+    </ul>
+
+    <ul className="footer__list">
+      <li className="footer__list__item">
+        <a className="footer__list__title" href="#projects">Projetos</a>
+      </li>
+      {/* <li className="footer__list__item">
+        <a className="footer__list__link" href="">
+          Pro-Bonos
+        </a>
+      </li>
+      <li className="footer__list__item">
+        <a className="footer__list__link" href="">
+          Comerciais
+        </a>
+      </li>
+      <li className="footer__list__item">
+        <a className="footer__list__link" href="">
+          Clientes
+        </a>
+      </li> */}
+    </ul>
+
+
+    <ul className="footer__list">
+      <li className="footer__list__item">
+        <a className="footer__list__title" href="#contact">Contato</a>
+      </li>
+      {/* <li className="footer__list__item">
+        <a className="footer__list__link" href="">
+          Pro-Bonos
+        </a>
+      </li>
+      <li className="footer__list__item">
+        <a className="footer__list__link" href="">
+          Comerciais
+        </a>
+      </li>
+      <li className="footer__list__item">
+        <a className="footer__list__link" href="">
+          Clientes
+        </a>
+      </li> */}
     </ul>
 
     <div className="footer__list">
-      <h3 className="footer__list__title footer__title">
+      <h3 className="footer__title">
         Mídia Social
       </h3>
       <ul className="footer__list__social-network">
@@ -92,7 +178,7 @@ const Footer = () => (
 
     <ul className="footer__list">
       <li className="footer__list__wwcode">
-        <h3 className="footer__list__title">Iniciativa</h3>
+        <h3 className="footer__title">Iniciativa</h3>
       </li>
       <li>
         <a href="https://www.womenwhocode.com/recife">

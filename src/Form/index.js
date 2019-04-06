@@ -52,7 +52,7 @@ class Form extends Component {
     return (
       <form className="form" onSubmit={this.handleFormSubmit}>
         <h2 className="main__title form__title">
-          Quer iniciar um novo projeto com a gente? Vamos!!
+          Quer iniciar um novo projeto <br></br>com a gente? Vamos!
         </h2>
 
         <div className="form__field">
