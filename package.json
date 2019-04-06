@@ -6,8 +6,11 @@
     "animate.css": "^3.7.0",
     "axios": "^0.18.0",
     "react": "^16.4.1",
+<<<<<<< HEAD
     "react-animate-on-scroll": "^2.1.5",
     "react-animated-css": "^1.0.4",
+=======
+>>>>>>> ed991556d938e4c97a3a9e83a8519e9edf4c0876
     "react-countup": "^4.1.2",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4",
