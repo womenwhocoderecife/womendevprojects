@@ -8,6 +8,7 @@ import Proposal from './Proposal';
 import Projects from './Projects';
 import Team from './Team';
 import Statistic from './Statistic';
+import Skills from './Skills';
 
 class Main extends Component {
   render() {
@@ -17,6 +18,7 @@ class Main extends Component {
         <Proposal />
         <Projects />
         <Team />
+        <Skills />
         <Statistic  />
         <Contact />
         

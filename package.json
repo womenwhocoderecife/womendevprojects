@@ -5,6 +5,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "react": "^16.4.1",
+    "react-countup": "^4.1.2",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4",
     "validator": "^10.5.0"
