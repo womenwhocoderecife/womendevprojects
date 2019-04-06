@@ -3,7 +3,6 @@ import '../assets/style/main/Projects.css'
 import ImageProBono from '../assets/images/projects.jpeg'
 import ImageComercial from '../assets/images/projects2.jpg'
 import ImageParticipate from '../assets/images/projects3.jpg'
-import {Animated} from "react-animated-css"
 import ScrollAnimation from 'react-animate-on-scroll'
 import "animate.css/animate.min.css";
 
@@ -54,7 +53,7 @@ class Projects extends Component{
                 <div>
                 <ScrollAnimation animateIn="fadeIn">
                     <img src={ImageComercial} alt='projetos comerciais' /> 
-                    </ScrollAnimation>   
+                </ScrollAnimation>   
                 </div>
                 
             </div>
@@ -62,10 +61,9 @@ class Projects extends Component{
 
             <div className='service-section-one'>
                 <div>
-                <ScrollAnimation animateIn='bounceInLeft'
-  animateOut='bounceOutLeft'>
+                <ScrollAnimation animateIn='bounceInLeft'animateOut='bounceOutLeft'>
                     <img src={ImageParticipate} alt='projetos pro-bonos' />
-                    </ScrollAnimation>   
+                </ScrollAnimation>   
                 </div>
 
                 <div>

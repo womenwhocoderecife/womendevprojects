@@ -23,7 +23,7 @@
 }
 
 .form__input {
-  font-size: 18px;
+  font-size: 1em;
 	padding: 10px 10px 10px 5px;
 	-webkit-appearance: none;
   display: block;
