@@ -25,6 +25,7 @@
 
 .footer__img {
   width: 150px;
+  margin-top:-10px;
 }
 
 .footer__list {
@@ -47,8 +48,11 @@
 
 .footer__list__title {
   margin: 0;
-  color: var(--dark-primary-color);
-  font: 500 18px 'Roboto', sans-serif;
+  /* color: var(--dark-primary-color); */
+  color:#47525E;
+  font-weight: 300 !important;
+  font: 500 1em 'Roboto', sans-serif;
+  text-decoration: none;
 }
 
 .footer__list__item {
@@ -64,6 +68,8 @@
 
 .footer__title {
   margin-top: 10px;
+  color: var(--dark-primary-color);
+  font: 500 1em 'Roboto', sans-serif;
 }
 
 .footer__list__social-network {
@@ -78,5 +84,7 @@
 }
 
 .footer__list__wwcode {
-  margin: 10px 0 0 10px;
+  margin: 0px 0 0 10px;
+  color: var(--dark-primary-color);
+  font: 500 1em 'Roboto', sans-serif;
 }
