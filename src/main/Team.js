@@ -4,6 +4,7 @@ import axios from 'axios';
 import github from '../assets/icons/github.svg';
 import instagram from '../assets/icons/instagram.svg';
 import twitter from '../assets/icons/twitter.svg';
+import linkedin from '../assets/icons/linkedin.svg';
 
 import '../assets/style/main/team.css';
 
@@ -36,7 +37,7 @@ class Team extends Component {
   checkLinkAvailability(link, image) {
     return link ? (
       <li className="footer__list__item__social-network">
-        <a href={link}>
+        <a href={link} target="_blank">
           <figure className="team__card__figure">
             <img src={image} alt="logo" />
           </figure>
@@ -77,6 +78,7 @@ class Team extends Component {
                   instagram,
                 )}
                 {this.checkLinkAvailability(team.twitter, twitter)}
+                {this.checkLinkAvailability(team.linkedin, linkedin)}
               </ul>
             </li>
           ))}
