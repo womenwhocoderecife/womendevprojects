@@ -37,8 +37,8 @@ const Proposal = () => (
         </figure>
         <p className="proposal__card__text">
         Desenvolvimento de liderança<br></br> técnica e gerenciamento de projetos.<br></br>
-
-        Análise de negócios, lucro nos<br></br> serviços prestados. %$ doado<br></br> para a comunidade será<br></br> revertido em cursos, livros,<br></br> coffeebreak, conferências, etc..
+        Análise de negócios, lucro nos serviços prestados. %$ doado para a comunidade
+        será revertido em cursos, livros, coffeebreak, conferências, etc..
         </p>
       </div>
 

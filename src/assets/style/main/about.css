@@ -34,7 +34,7 @@
 .about__text {
   width: 100%;
   margin-top: 16px;
-  text-align: left;
+  text-align: justify;
   color: var(--secondary-color);
   font: 300 16px 'Roboto', sans-serif;
   line-height: 2.5;

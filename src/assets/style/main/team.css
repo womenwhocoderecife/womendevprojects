@@ -28,7 +28,7 @@
 
 @media (min-width: 1100px) {
   .team__content {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -51,7 +51,9 @@
 }
 
 .team__card__img{
-  width: 100%;
+  width: 60%;
+  display: block;
+  margin: auto;
   border-radius: 50%;
   object-fit: cover;
 }

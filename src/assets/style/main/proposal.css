@@ -71,6 +71,7 @@
 .proposal__card__text {
   margin-top: 16px;
   text-align: center;
+  width: 300px;
   color: var(--secondary-color);
   font: 300 16px 'Roboto', sans-serif;
   line-height: 2;

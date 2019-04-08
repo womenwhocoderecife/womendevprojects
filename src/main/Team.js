@@ -47,14 +47,9 @@ class Team extends Component {
   }
 
   render() {
-    const { isLoading, teams } = this.state;
+    const { teams } = this.state;
 
-    return isLoading ? (
-      <img
-        src="https://media.giphy.com/media/l0HlymZ7Jv6JoiYjC/giphy.gif"
-        alt="wonder women"
-      />
-    ) : (
+    return (
       <section className="team" id="team">
         <h2 className="main__title team__title">Equipe</h2>
         <ul className="team__content">
