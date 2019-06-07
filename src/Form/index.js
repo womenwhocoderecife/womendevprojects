@@ -45,9 +45,9 @@ class Form extends Component {
   };
 
   render() {
-    let validation = this.submitted
-      ? this.validator.validate(this.state)
-      : this.state.validation;
+    // let validation = this.submitted
+    //   ? this.validator.validate(this.state)
+    //   : this.state.validation;
 
     return (
       <form className="form" onSubmit={this.handleFormSubmit}>
