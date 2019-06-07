@@ -52,98 +52,19 @@ class Form extends Component {
     return (
       <form className="form" onSubmit={this.handleFormSubmit}>
         <h2 className="main__title form__title">
-          Quer iniciar um novo projeto <br></br>com a gente? Vamos!
+          Quer iniciar um novo projeto <br />
+          com a gente? Vamos!
         </h2>
 
-        <div className="form__field">
-          <div className="form__label-group">
-            <span className="form__require">*</span>
-            <label className="form__label" htmlFor="name">
-              Nome
-            </label>
-          </div>
-          <input
-            className="form__input"
-            id="name"
-            type="text"
-            required
-            name="name"
-            placeholder="Nome Completo"
-            onChange={this.handleInputChange}
-          />
-          <span className="form__validate">
-            {validation.name.message}
-          </span>
-        </div>
-
-        <div className="form__field">
-          <div className="form__label-group">
-            <span className="form__require">*</span>
-            <label className="form__label" htmlFor="email">
-              E-mail
-            </label>
-          </div>
-          <input
-            className="form__input"
-            id="email"
-            type="email"
-            name="email"
-            required
-            placeholder="Seu e-mail"
-            onChange={this.handleInputChange}
-          />
-          <span className="form__validate">
-            {validation.email.message}
-          </span>
-        </div>
-
-        <div className="form__field">
-          <div className="form__label-group">
-            <span className="form__require">*</span>
-            <label className="form__label" htmlFor="subject">
-              Assunto
-            </label>
-          </div>
-          <input
-            className="form__input"
-            id="subject"
-            type="text"
-            name="subject"
-            required
-            placeholder="Título da mensagem"
-            onChange={this.handleInputChange}
-          />
-          <span className="form__validate">
-            {validation.subject.message}
-          </span>
-        </div>
-
-        <div className="form__field">
-          <div className="form__label-group">
-            <span className="form__require">*</span>
-            <label className="form__label" htmlFor="message">
-              Mensagem
-            </label>
-          </div>
-          <span className="form__validate">
-            {validation.message.message}
-          </span>
-          <textarea
-            className="form__textarea"
-            id="message"
-            name="message"
-            required
-            data-gramm="false"
-            onChange={this.handleInputChange}
-          />
-        </div>
-        <input
-          className="form__submit"
-          id="submit"
-          type="submit"
-          value="Enviar"
-          onClick={this.handleFormSubmit}
-        />
+        <h3
+          style={{
+            margin: '0 0 20px 0',
+            width: '100%',
+            color: '#fd50ceba',
+          }}
+        >
+          recife@womenwhocode.com
+        </h3>
       </form>
     );
   }
