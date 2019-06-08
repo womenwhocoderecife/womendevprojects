@@ -1,5 +1,5 @@
 .form {
-  grid-column:  1 / -1;
+  grid-column: 1 / -1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,10 +9,15 @@
   text-align: left;
 }
 
+.email {
+  margin: 0 0 20px 0;
+  width: 100%;
+  color: #fd50ceba;
+}
 @media (min-width: 1020px) {
   .form {
     padding: 0 0 0 30px;
-    grid-column:  7 / 13;
+    grid-column: 7 / 13;
   }
 }
 
@@ -24,36 +29,36 @@
 
 .form__input {
   font-size: 1em;
-	padding: 10px 10px 10px 5px;
-	-webkit-appearance: none;
+  padding: 10px 10px 10px 5px;
+  -webkit-appearance: none;
   display: block;
-	background: #fafafa;
-	color: var(--secondary-color);
-	width: 100%;
-	border: none;
-	border-radius: 0;
+  background: #fafafa;
+  color: var(--secondary-color);
+  width: 100%;
+  border: none;
+  border-radius: 0;
   margin-bottom: 5px;
   background-image: none !important;
-  border-bottom: 1px solid var(--primary-color)
+  border-bottom: 1px solid var(--primary-color);
 }
 
 .form__label-group {
   display: flex;
   align-items: flex-end;
-  color: var(--primary-color); 
+  color: var(--primary-color);
 }
 
 .form__label {
-	font-size: 14px;
-	font-weight: normal;
+  font-size: 14px;
+  font-weight: normal;
   pointer-events: none;
   padding-left: 5px;
-	transition: all 0.2s ease; 
+  transition: all 0.2s ease;
 }
 
 .form__title {
   margin: 0 0 20px 0;
-  width: 100%
+  width: 100%;
 }
 
 .form__require {
@@ -86,25 +91,33 @@ textarea:active {
 }
 
 .form__submit:hover {
-    cursor: pointer;
-    background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.1));
+  cursor: pointer;
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(0, 0, 0, 0.1)
+  );
 }
 
 .form__submit:active {
-    background-image: linear-gradient(to bottom,rgba(0,0,0,.1), rgba(0,0,0,.1));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.1)
+  );
 }
 
 .form__submit--inactive {
-    background: #e1e1e1;
+  background: #e1e1e1;
 }
 
 .form__submit--inactive:hover {
-    cursor: auto;
-    background-image: none;
+  cursor: auto;
+  background-image: none;
 }
 
 .form__submit--inactive:active {
-    background-image: none;
+  background-image: none;
 }
 
 .form__validate {

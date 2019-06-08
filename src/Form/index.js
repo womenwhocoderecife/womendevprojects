@@ -56,15 +56,7 @@ class Form extends Component {
           com a gente? Vamos!
         </h2>
 
-        <h3
-          style={{
-            margin: '0 0 20px 0',
-            width: '100%',
-            color: '#fd50ceba',
-          }}
-        >
-          recife@womenwhocode.com
-        </h3>
+        <h3 className="email">recife@womenwhocode.com</h3>
       </form>
     );
   }
