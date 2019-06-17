@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import FormValidator from './FormValidator';
 import validations from './validations';
+import * as emailjs from 'emailjs-com';
 
 import './index.css';
 
@@ -22,6 +23,8 @@ class Form extends Component {
     this.submitted = false;
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
+
+    emailjs.init('user_tBJWRd0DwWH4aciirQP36');
   }
 
   handleInputChange = event => {
@@ -40,14 +43,42 @@ class Form extends Component {
     this.submitted = true;
 
     if (validation.isValid) {
-      // handle actual form submission here
+      this.sendMail();
     }
   };
 
+  clearForm = () => {
+    document.querySelector('.form').reset();
+  };
+
+  sendMail = () => {
+    let template_params = {
+      to_email: 'recife@womenwhocode.com',
+      from_name: this.state.name,
+      from_email: this.state.email,
+      message_html: `${this.state.subject}: ${this.state.message}`,
+    };
+    const service_id = 'gmail';
+    const template_id = 'template_ilLeoLLt';
+
+    emailjs.send(service_id, template_id, template_params).then(
+      response => {
+        this.submitted = false;
+        this.clearForm();
+        alert('E-mail enviado com sucesso!');
+      },
+      err => {
+        this.submitted = false;
+        this.clearForm();
+        alert('Tente mais tarde!');
+      },
+    );
+  };
+
   render() {
-    // let validation = this.submitted
-    //   ? this.validator.validate(this.state)
-    //   : this.state.validation;
+    let validation = this.submitted
+      ? this.validator.validate(this.state)
+      : this.state.validation;
 
     return (
       <form className="form" onSubmit={this.handleFormSubmit}>
@@ -56,7 +87,95 @@ class Form extends Component {
           com a gente? Vamos!
         </h2>
 
-        <h3 className="email">recife@womenwhocode.com</h3>
+        <div className="form__field">
+          <div className="form__label-group">
+            <span className="form__require">*</span>
+            <label className="form__label" htmlFor="name">
+              Nome
+            </label>
+          </div>
+          <input
+            className="form__input"
+            id="name"
+            type="text"
+            required
+            name="name"
+            placeholder="Nome Completo"
+            onChange={this.handleInputChange}
+          />
+          <span className="form__validate">
+            {validation.name.message}
+          </span>
+        </div>
+
+        <div className="form__field">
+          <div className="form__label-group">
+            <span className="form__require">*</span>
+            <label className="form__label" htmlFor="email">
+              E-mail
+            </label>
+          </div>
+          <input
+            className="form__input"
+            id="email"
+            type="email"
+            name="email"
+            required
+            placeholder="Seu e-mail"
+            onChange={this.handleInputChange}
+          />
+          <span className="form__validate">
+            {validation.email.message}
+          </span>
+        </div>
+
+        <div className="form__field">
+          <div className="form__label-group">
+            <span className="form__require">*</span>
+            <label className="form__label" htmlFor="subject">
+              Assunto
+            </label>
+          </div>
+          <input
+            className="form__input"
+            id="subject"
+            type="text"
+            name="subject"
+            required
+            placeholder="Título da mensagem"
+            onChange={this.handleInputChange}
+          />
+          <span className="form__validate">
+            {validation.subject.message}
+          </span>
+        </div>
+
+        <div className="form__field">
+          <div className="form__label-group">
+            <span className="form__require">*</span>
+            <label className="form__label" htmlFor="message">
+              Mensagem
+            </label>
+          </div>
+          <span className="form__validate">
+            {validation.message.message}
+          </span>
+          <textarea
+            className="form__textarea"
+            id="message"
+            name="message"
+            required
+            data-gramm="false"
+            onChange={this.handleInputChange}
+          />
+        </div>
+        <input
+          className="form__submit"
+          id="submit"
+          type="submit"
+          value="Enviar"
+          onClick={this.handleFormSubmit}
+        />
       </form>
     );
   }
