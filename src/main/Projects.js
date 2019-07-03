@@ -13,7 +13,7 @@ class Projects extends Component{
         <div>
             <div className='service-section-one'>
                 <div>
-                <ScrollAnimation animateIn='bounceInLeft'>         
+                <ScrollAnimation animateIn='fadeIn'>         
                     <img src={ImageProBono} alt='projetos pro-bonos' />
                 </ScrollAnimation> 
                 </div>
@@ -22,7 +22,7 @@ class Projects extends Component{
                 <ScrollAnimation animateIn='fadeIn'>
                     <h1>Projetos Pro-Bonos</h1>
                 </ScrollAnimation>     
-                    <ScrollAnimation animateIn="fadeInUp">
+                    <ScrollAnimation animateIn="fadeIn">
                         <p>
                         Projetos Web/Mobile para organizações sem fins lucrativos.<br></br>
                         Excelente oportunidade para os membros que<br></br> estão começando na área de tecnologia.<br></br>
@@ -38,7 +38,7 @@ class Projects extends Component{
                 <ScrollAnimation animateIn='fadeIn'>
                     <h1>Projetos Comerciais</h1>
                 </ScrollAnimation>       
-                    <ScrollAnimation animateIn="fadeInUp">
+                    <ScrollAnimation animateIn="fadeIn">
                     <p>
                     Projetos Web/Mobile para empresas e organizações.<br></br>
                     Oportunidade para os membros participarem de projetos reais por meio da prestação de serviços.<br></br>  
@@ -61,7 +61,7 @@ class Projects extends Component{
 
             <div className='service-section-one'>
                 <div>
-                <ScrollAnimation animateIn='bounceInLeft'animateOut='bounceOutLeft'>
+                <ScrollAnimation animateIn='fadeIn'animateOut='fadeIn'>
                     <img src={ImageParticipate} alt='projetos pro-bonos' />
                 </ScrollAnimation>   
                 </div>
@@ -70,7 +70,7 @@ class Projects extends Component{
                 <ScrollAnimation animateIn='fadeIn'>
                     <h1>Como Posso Participar?</h1>
                 </ScrollAnimation>   
-                    <ScrollAnimation animateIn="fadeInUp">
+                    <ScrollAnimation animateIn="fadeIn">
                         <p>
                         Membros do WWcode Recife participando de<br></br> grupos de estudos e meetups práticos.<br></br>
                         Líderes/Voluntários do WWCode apoiando com<br></br> mentoria e liderando times.<br></br>

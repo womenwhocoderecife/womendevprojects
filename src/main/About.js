@@ -12,7 +12,7 @@ const About = () => (
     <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>
       <h2 className="main__title about__title">WomenDev Projects</h2>
       </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeInUp">
+      <ScrollAnimation animateIn="fadeIn">
         <p className="about__text">
           Uma iniciativa do Women Who Code Recife que tem o objetivo de
           desenvolver projetos pro-bonos e comerciais para colocar em
