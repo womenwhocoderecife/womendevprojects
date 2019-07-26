@@ -26,6 +26,6 @@
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {
-    "react-test-renderer": "^16.5.2"
+    "react-test-renderer": "^16.8.6"
   }
 }
