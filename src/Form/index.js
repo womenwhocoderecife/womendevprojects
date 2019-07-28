@@ -83,8 +83,8 @@ class Form extends Component {
     return (
       <form className="form" onSubmit={this.handleFormSubmit}>
         <h2 className="main__title form__title">
-          Empresas Ongs e Iniciativas, Quer iniciar um novo projeto <br />
-          com a gente? Vamos!
+          Se você representa uma organização ou iniciativa que deseja iniciar um projeto conosco,
+          entre em contato pelo formulário a seguir:
         </h2>
 
         <div className="form__field">
@@ -100,7 +100,7 @@ class Form extends Component {
             type="text"
             required
             name="name"
-            placeholder="Nome Completo"
+            placeholder="Nome"
             onChange={this.handleInputChange}
           />
           <span className="form__validate">
@@ -121,7 +121,7 @@ class Form extends Component {
             type="email"
             name="email"
             required
-            placeholder="Seu e-mail"
+            placeholder="e-mail"
             onChange={this.handleInputChange}
           />
           <span className="form__validate">
@@ -142,7 +142,7 @@ class Form extends Component {
             type="text"
             name="subject"
             required
-            placeholder="Título da mensagem"
+            placeholder="assunto"
             onChange={this.handleInputChange}
           />
           <span className="form__validate">
