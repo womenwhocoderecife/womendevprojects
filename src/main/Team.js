@@ -58,7 +58,7 @@ class Team extends Component {
               <figure className="team__card__figure">
                 <img
                   className="team__card__img"
-                  src={team.photo}
+                  src={`https://women-dev-projects.herokuapp.com/${team.picture.url}`}
                   alt={team.name}
                   title={team.name}
                 />
