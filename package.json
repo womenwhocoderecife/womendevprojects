@@ -2,7 +2,7 @@
   "name": "womendevprojects",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://womenwhocoderecife.github.io/womendevprojects",
+  "homepage": "http://womenwhocoderecife.github.io/",
   "dependencies": {
     "animate.css": "^3.7.0",
     "axios": "^0.18.0",
@@ -23,9 +23,11 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "node deploy.js"
   },
   "devDependencies": {
+    "dotenv": "^8.2.0",
+    "ftp-deploy": "^2.3.6",
     "react-test-renderer": "^16.8.6"
   }
 }
