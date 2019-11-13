@@ -89,10 +89,10 @@ class Form extends Component {
 
         <div className="form__field">
           <div className="form__label-group">
-            <span className="form__require">*</span>
             <label className="form__label" htmlFor="name">
               Nome
             </label>
+            <span className="form__require">*</span>
           </div>
           <input
             className="form__input"
@@ -110,10 +110,10 @@ class Form extends Component {
 
         <div className="form__field">
           <div className="form__label-group">
-            <span className="form__require">*</span>
             <label className="form__label" htmlFor="email">
               E-mail
             </label>
+            <span className="form__require">*</span>
           </div>
           <input
             className="form__input"
@@ -121,7 +121,7 @@ class Form extends Component {
             type="email"
             name="email"
             required
-            placeholder="e-mail"
+            placeholder="E-mail"
             onChange={this.handleInputChange}
           />
           <span className="form__validate">
@@ -131,10 +131,10 @@ class Form extends Component {
 
         <div className="form__field">
           <div className="form__label-group">
-            <span className="form__require">*</span>
             <label className="form__label" htmlFor="subject">
               Assunto
             </label>
+            <span className="form__require">*</span>
           </div>
           <input
             className="form__input"
@@ -142,7 +142,7 @@ class Form extends Component {
             type="text"
             name="subject"
             required
-            placeholder="assunto"
+            placeholder="Assunto"
             onChange={this.handleInputChange}
           />
           <span className="form__validate">
@@ -152,10 +152,10 @@ class Form extends Component {
 
         <div className="form__field">
           <div className="form__label-group">
-            <span className="form__require">*</span>
             <label className="form__label" htmlFor="message">
               Mensagem
             </label>
+            <span className="form__require">*</span>
           </div>
           <span className="form__validate">
             {validation.message.message}
@@ -166,6 +166,7 @@ class Form extends Component {
             name="message"
             required
             data-gramm="false"
+            placeholder="Mensagem"
             onChange={this.handleInputChange}
           />
         </div>
