@@ -1,18 +1,31 @@
 import React from 'react';
 
-import Header from '../Header';
-import Main from '../main/Main';
-import Footer from '../Footer';
+import Theme from "../Theme";
 
 import { Container } from './styles';
+import { GlobalStyle } from '../assets/style/GlobalStyle';
+import Header from '../sections/Header';
+import Hero from '../sections/Hero';
+import About from '../sections/About';
+import Proposal from '../sections/Proposal';
+import Projects from '../sections/Projects';
+import Team from '../sections/Team';
 
 function App() {
   return (
-    <Container>
-      <Header />
-      <Main />
-      <Footer />
-    </Container>
+    <Theme>
+      <GlobalStyle />
+      <Container>
+        <Header />
+        <Hero />
+        <About />
+        <Proposal />
+        <Projects />
+        <Team />
+        {/*<Main />
+        <Footer /> */}
+      </Container>
+    </Theme>
   );
 }
 
