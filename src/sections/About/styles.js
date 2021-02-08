@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Container = styled.section`
     width: 100%;
@@ -11,13 +11,14 @@ export const Container = styled.section`
     }
   `;
 
-  export const Content = styled.div`
+export const Content = styled.div`
     width: 50%;
+    padding-left: 2%;
 
     p {
         text-align: justify;
         color: ${props => props.theme.colors.secondary};
-        font: 300 ${props => props.theme.fontSizes.small} ${props => props.theme.fonts.join(", ")};
+        font: 300 ${props => props.theme.fontSizes.small} ${props => props.theme.fonts.join(', ')};
         line-height: 2;
     }
 
@@ -26,7 +27,7 @@ export const Container = styled.section`
     }
   `;
 
-  export const Figure = styled.figure`
+export const Figure = styled.figure`
     width: 50%;
 
     img {

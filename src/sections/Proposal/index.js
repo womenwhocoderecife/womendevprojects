@@ -1,64 +1,58 @@
-import React from 'react';
+import React from 'react'
+
+import ImageProBono from '../../assets/images/team01.jpg'
+import ImageComercial from '../../assets/images/team02.jpg'
+import ImageParticipate from '../../assets/images/team03.jpg'
 import SectionTitle from '../../components/SectionTitle'
 
-import group from '../../assets/icons/group.svg';
-import rocket from '../../assets/icons/rocket.svg';
-import tag from '../../assets/icons/tag.svg';
+import { Container, Box, Image, Content, Text } from './styles'
 
-import { Container, Content, Item, Figure, Subtitle, Text } from './styles.js'
+const proposal = () => (
+    <Container id="proposal">
+    
+        <Box>
+            <Image src={ImageProBono} alt='projetos pro-bonos' />
 
-const Proposal = () => (
-  <Container id="proposal">
-      <SectionTitle title="Nossa Proposta" align="center" />
-      <Content>
-        <Item>
-            <Figure>
-                <img
-                    src={group}
-                    alt="Group"
-                />
-                <Subtitle>Qualificar</Subtitle>
-            </Figure>
-            <Text>
-            Protagonização em <br></br>treinamentos e Meetups do WWcode
-            </Text>
-        </Item>
+            <Content>
+                <SectionTitle title="Projetos Pro-Bonos" />
+                <Text>
+                Projetos Web/Mobile para organizações sem fins lucrativos.<br></br>
+                Excelente oportunidade para os membros que<br></br> estão começando na área de tecnologia.<br></br>
+                Ajuda as organizações/iniciativas na Contentulgação de suas<br></br> ações/atividades/campanhas.<br></br>
+                Apoio da comunidade para desenvolver <br></br>habilidades profissionais.
+                </Text>
+            </Content>
+        </Box>
 
-      <Item>
-        <Figure>
-          <img
-            src={rocket}
-            alt="Rocket"
-          />
-          <Subtitle>
-            Espírito empreendedor
-          </Subtitle>
-        </Figure>
-        <Text>
-        Desenvolvimento de liderança<br></br> técnica e gerenciamento de projetos.<br></br>
-        Análise de negócios, lucro nos serviços prestados.<br></br> $ doado para a comunidade
-        será revertido em cursos, livros, coffeebreak, conferências, etc..
-        </Text>
-      </Item>
+        <Box>
+            <Content>
+                <SectionTitle title="Projetos Comerciais" />
+                <Text>
+                Projetos Web/Mobile para empresas e organizações.<br></br>
+                Oportunidade para os membros participarem de projetos reais por meio da prestação de serviços.<br></br>  
+                Qualidade no serviço prestado.<br></br>
+                Apoio e incentivo ao empreendedorismo feminino.<br></br>
+                Apoio da Comunidade, de leads técnicas com mais experiência de mercado.
+                </Text>
+            </Content>
+            
+            <Image src={ImageComercial} alt='projetos comerciais' /> 
+        </Box>
 
-      <Item>
-        <Figure>
-          <img
-            src={tag}
-            alt="Tag HTML"
-          />
-          <Subtitle>
-            Desenvolver Projetos
-          </Subtitle>
-        </Figure>
-        <Text>
-          Desenvolvimento Web<br></br>
-          App Mobile<br></br>
-          Diversas Tecnologias
-        </Text>
-      </Item>
-      </Content>
-  </Container>
-);
+        <Box>
+            <Image src={ImageParticipate} alt='projetos pro-bonos' />
 
-export default Proposal;
+            <Content>
+                <SectionTitle title="Como Posso Participar?" />
+                <Text>
+                Membros do WWcode Recife participando de<br></br> grupos de estudos e meetups práticos.<br></br>
+                Líderes/Voluntários do WWCode apoiando com<br></br> mentoria e liderando times.<br></br>
+                Buscamos pessoas comprometidas, éticas, disponíveis,<br></br> que gostem de aprender, de compartilharconhecimento <br></br> e de trabalhar em equipe.
+                </Text>
+            </Content>
+        </Box>
+
+         </Container>  
+    );
+
+    export default proposal;

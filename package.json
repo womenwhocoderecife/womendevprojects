@@ -4,30 +4,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "animate.css": "^3.7.0",
     "axios": "^0.18.0",
     "emailjs-com": "^2.3.2",
+    "eslint": "^7.19.0",
+    "eslint-plugin-react": "^7.22.0",
     "gh-pages": "^3.1.0",
     "react": "^16.13.1",
-    "react-animate-on-scroll": "^2.1.5",
-    "react-animated-css": "^1.0.4",
-    "react-countup": "^4.1.2",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4",
-    "styled-components": "^4.3.2",
-    "validator": "^10.5.0"
+    "styled-components": "^4.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "yarn run build",
     "deploy-gh-pages": "gh-pages -d build",
     "deploy": "node deploy.js"
   },
   "devDependencies": {
-    "dotenv": "^8.2.0",
     "ftp-deploy": "^2.3.6",
     "react-test-renderer": "^16.8.6"
   }
