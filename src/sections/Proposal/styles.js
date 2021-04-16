@@ -1,32 +1,46 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Container = styled.section`
-    width: 100%;
-    padding: 2rem;
-    padding-top: 10rem;
-    width: 100%;
-    background-color: ${props => props.theme.colors.lightViolet};
+  width: 100%;
+  padding: 2rem;
+  padding-top: 10rem;
+  width: 100%;
+  background-color: ${(props) => props.theme.colors.lightViolet};
 `;
 
 export const Box = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1024px) {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+  }
 `;
 
 export const Image = styled.img`
-    width: 40%;
+  width: 40%;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 export const Content = styled.div`
-    width: 40%;
-    padding-left: 2rem;
-    padding-right: 2rem;
+  width: 40%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 export const Text = styled.p`
-    text-align: justify;
-    color: ${props => props.theme.colors.secondary};
-    font: 300 ${props => props.theme.fontSizes.small} ${props => props.theme.fonts.join(", ")};
-    line-height: 2;
+  text-align: justify;
+  color: ${(props) => props.theme.colors.secondary};
+  font: 300 ${(props) => props.theme.fontSizes.small}
+    ${(props) => props.theme.fonts.join(', ')};
+  line-height: 2;
 `;

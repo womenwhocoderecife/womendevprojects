@@ -6,9 +6,9 @@ export const HeaderStyle = styled.header`
   height: 144px;
   z-index: 99999999;
 
-  background-color: ${props =>
+  background-color: ${(props) =>
     props.scroll > 0 ? props.theme.colors.violet : 'none'};
-  
+
   @media (max-width: 507px) {
     height: 80px;
   }
@@ -40,7 +40,7 @@ export const LogoLink = styled.a`
 `;
 
 export const Logo = styled.img`
-  width: 80%;  
+  width: 80%;
   @media (min-width: 768px) and (max-width: 1024px) {
     width: 62%;
   }
@@ -51,14 +51,14 @@ export const Nav = styled.nav`
 
   @media (max-width: 1024px) {
     position: absolute;
-    display: ${props => (props.menuVisibility ? 'flex' : 'none')};
+    display: ${(props) => (props.menuVisibility ? 'flex' : 'none')};
     justify-content: center;
     width: 2%;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: ${props => props.theme.colors.lightSecondary};
+    background-color: #965c96;
     z-index: 10;
   }
 `;
@@ -71,14 +71,14 @@ export const NavList = styled.ul`
   list-style: none;
 
   @media (max-width: 1024px) {
-    display: ${props => (props.menuVisibility ? 'flex' : 'none')};
+    display: ${(props) => (props.menuVisibility ? 'flex' : 'none')};
     flex-direction: column;
     text-align: center;
   }
 `;
 
 export const ListItem = styled.li`
-  font-family: ${props => props.theme.fonts.join(", ")};
+  font-family: ${(props) => props.theme.fonts.join(', ')};
   font-style: normal;
   font-weight: bold;
   font-size: 1.6rem;
@@ -90,15 +90,15 @@ export const ListLink = styled.a`
   text-transform: uppercase;
   font-size: 1.2rem;
   cursor: pointer;
-  color: ${props => props.theme.colors.lightSecondary};
+  color: ${(props) => props.theme.colors.lightSecondary};
   transition: all 0ms linear 0s;
 
   :hover {
     color: #cea1ff;
-    border-bottom: 2px solid #ff50cd; 
+    border-bottom: 2px solid #ff50cd;
   }
 
-  &[href='${props => props.activeSection}'] {
+  &[href='${(props) => props.activeSection}'] {
     color: #ce9ffe;
     border-bottom: 2px solid #ff50cd;
   }
@@ -127,20 +127,22 @@ const ToggleLine = styled.div`
     width: 100%;
     margin: 6px auto;
     transition-duration: 0.3s;
-    background-color: ${props => props.theme.colors.lightSecondary};
+    background-color: ${(props) => props.theme.colors.lightSecondary};
   }
 `;
 
 export const ToggleOne = styled(ToggleLine)`
-  transform: ${props =>
+  transform: ${(props) =>
     props.menuVisibility ? 'rotate(45deg) translate(7px, 7px)' : ''};
 `;
 
 export const ToggleTwo = styled(ToggleLine)`
-  opacity: ${props => (props.menuVisibility ? 0 : 1)};
+  opacity: ${(props) => (props.menuVisibility ? 0 : 1)};
 `;
 
 export const ToggleThree = styled(ToggleLine)`
-  transform: ${props =>
-    props.menuVisibility ? 'rotate(-45deg) translate(8px, -9px)' : ''};
+  transform: ${(props) =>
+    props.menuVisibility
+      ? 'rotate(-45deg) translate(8px, -9px)'
+      : ''};
 `;
