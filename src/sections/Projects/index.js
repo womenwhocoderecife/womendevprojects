@@ -28,7 +28,7 @@ export default function Projects() {
               rel="noopener"
               key={project.id}
             >
-              <Image src={project.image} alt={project.name} />
+              <Image src={`https://women-dev-projects.herokuapp.com${project.image}`} alt={project.name} />
               <Description>{project.description}</Description>
               <TeamTitle>Time:</TeamTitle>
               <Team>

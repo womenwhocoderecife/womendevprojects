@@ -21,7 +21,7 @@ export default function Team() {
                 key={item.id}
                 name={item.name}
                 description={item.description}
-                photo={item.photo}
+                photo={`https://women-dev-projects.herokuapp.com${item.photo}`}
                 linkedin={item.linkedin}
                 instagram={item.instagram}
                 twitter={item.twitter}
